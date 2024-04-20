@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #66666600; 
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+
+body::before{
+content: '';
+background-color: rgb(0, 0, 0, .6);
+width: 100%;
+height: 100%;
+position: absolute;
+top:0;
+bottom:0;
+left:0;
+right:0;
+}
+ 
+.login_body{
+    padding: 60px;
+    z-index: 90;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    height: 500px;  
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.login_body h2{
+    font-size: 34px;
+    color:#fff;
+    margin-bottom: 25px;
+    background-color: #333;
+    border: none;
+    border-radius: 55px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login_body input{
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 55px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login_body input:hover{
+    background-color: #444;
+}
+
+.input_box{
+    margin-bottom: 25px;
+}
+
+.login_body button{
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    border-radius: 55px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login_body button:hover{
+    background-color: #fc1722;
+    cursor: pointer;
+}
+
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.support input{
+    width: 15px;
+    height: 15px;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+}
+
+.remember span{
+    margin-right: 5px;
+    height: 25px; 
+}
+
+.help a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.help a:hover{
+    text-decoration: underline;
+}
+
+.sign_up{
+    display: flex;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 16px;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.sign_up a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sign_up a:hover{
+    text-decoration: underline;
+}
+
+.terms {
+    color: #737373;
+    font-size: 13px;
+}
+
+.terms a{
+    text-decoration: none;
+    color: #0071eb;
+    cursor: pointer;
+}
+
+.terms a:hover{
+    text-decoration: underline;
+}
+.message{
+    color: red;
+}
