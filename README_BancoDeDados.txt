@@ -8,6 +8,7 @@ CREATE DATABASE dblocadora;
 USE dblocadora;
 
 -- Criação da tabela "usuarios"
+
 CREATE TABLE usuarios (
   id_usu INT AUTO_INCREMENT PRIMARY KEY,
   nome_usu VARCHAR(255),
@@ -17,6 +18,7 @@ CREATE TABLE usuarios (
 );
 
 -- Criação da tabela "filmes"
+
 CREATE TABLE filmes (
   id_filme INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   nome_filme VARCHAR(255),
@@ -28,3 +30,8 @@ CREATE TABLE filmes (
   produtura_filme VARCHAR(255),
   caminho_imagem VARCHAR(255)
 );
+
+--Inserir usuario teste no banco de dados 
+INSERT INTO usuarios (nome_usu, email_usu, data_nasc, senha_usu)
+VALUES ('Nome do Administrador', 'admin@example.com', '1990-01-01', 'senha123');
+
