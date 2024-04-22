@@ -81,7 +81,7 @@ echo "<div class='container'>
         <div class='sucesso'>
           <h2>Cadastro realizado com sucesso!</h2>
           <p>Agora você está pronto para explorar nosso catálogo de filmes e séries.</p>
-          <a href='http://localhost/locadora%20de%20filmes/' class='voltar-link'>Voltar para a página inicial</a>
+          <a href='http://localhost/Projeto-Locadora-/' class='voltar-link'>Voltar para a página inicial</a>
         </div>
       </div>";
 
