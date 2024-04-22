@@ -8,7 +8,6 @@ body{
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url(../img/cinza_azulado.png.png);
     background-image: cover;
     background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,10 +25,9 @@ bottom:0;
 left:0;
 right:0;
 }
- 
+
 .cadastro_body{
     margin-top: 30px;
-
     padding: 60px;
     z-index: 90;
     position:relative;
@@ -49,13 +47,13 @@ right:0;
     background-color: #333;
     border: none;
     border-radius: 55px;
-    padding-left: 15px;
+    padding-left: 80px;  
     box-sizing: border-box;
     outline: none;
 }
 
-.cadastro_body input{
-    height: 50px;
+.cadastro_body input{  
+    height: 30px; 
     width: 100%;
     color: #fff;
     background-color: #333;
@@ -75,8 +73,8 @@ right:0;
 }
 
 .cadastro_body button{
-    margin-top: 30px;
-    height: 60px;
+    margin-top: 25px;
+    height: 45px;
     width: 100%;
     color: #fff;
     background-color: #e50914;
