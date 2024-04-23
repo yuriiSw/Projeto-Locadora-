@@ -10,6 +10,15 @@ h1 {
     color: #fc0303;
     text-align: center;
 }
+h2{
+    color: #fff;
+    text-align: center;
+}
+h3{
+    color: #fff;
+    text-align: center;
+}
+
 
 .cor1 {
     background-color: #1a1a1a;
@@ -64,4 +73,7 @@ h1 {
 .container h2 {
     text-align: center;
     margin-bottom: 20px;
+}
+.img_infos_filmes{
+    text-align: center;
 }
