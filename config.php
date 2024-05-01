@@ -5,4 +5,3 @@ define('PASS', '');
 define('BASE', 'dblocadora');
 
 $conn = new mysqli(HOST, USER, PASS, BASE);
-

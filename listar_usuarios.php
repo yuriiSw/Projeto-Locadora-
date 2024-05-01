@@ -1,9 +1,9 @@
 <?php
 // Conectar ao banco de dados
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "dblocadora"; 
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dblocadora";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -25,13 +25,13 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Locadora de filmes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/Filmes.css">
   <style>
     /* Estilos personalizados */
     .table-dark tbody tr:hover {
-      background-color: rgba(0, 0, 0, 0.15); /* Adiciona efeito de escurecimento ao passar o mouse */
+      background-color: rgba(0, 0, 0, 0.15);
+      /* Adiciona efeito de escurecimento ao passar o mouse */
     }
   </style>
 </head>
@@ -42,8 +42,7 @@ $result = $conn->query($sql);
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark cor1">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
@@ -52,16 +51,14 @@ $result = $conn->query($sql);
             <a class="nav-link" href="Filmes.html">HOME</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="true">FILMES</a>
+            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">FILMES</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Cadastrar Filme</a></li>
               <li><a class="dropdown-item" href="#">Listar / Editar Filmes</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="true">USUARIOS</a>
+            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">USUARIOS</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Listar / Editar Usuarios</a></li>
             </ul>
@@ -132,9 +129,7 @@ $result = $conn->query($sql);
     }
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
