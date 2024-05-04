@@ -13,6 +13,39 @@
   font-family: 'Lexend+Deca', sans-serif; /* Aplicando a fonte Inter */
   font-size: 25PX;
 }
+.aprovimgloc{
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    
+}
+.botaoalugar {
+  position: relative;
+  
+  height: 100vh; /* Garante que o container ocupe toda a altura da viewport */
+}
+
+.botaoalugar button {
+  
+  background-color: #fc1722;
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  transform: translateY(-50%);
+  margin-bottom: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 55px;
+  background-color: #e50914;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+
+
+}
 
 .footer{
   padding: 20px;
@@ -20,7 +53,26 @@
   bottom: 0;
   width: 100%;
 }
+.cadastro_body button {
+  margin-top: 25px;
+  height: 45px;
+  width: 100%;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 55px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 10px;
+}
 
+.cadastro_body button:hover {
+  background-color: #fc1722;
+  cursor: pointer;
+}
+.descfilmes{
+  text-align: justify;
+}
 @font-face {
   font-family: "Retro Stereo Wide";
   src: url("../font/Retro\ Stereo\ Wide.ttf") format("truetype");
@@ -35,6 +87,7 @@
   font-family: "Retro Stereo Wide", sans-serif;
   font-size: 40px;
 }
+
 body {
   background-color: #1a1a1a;
   font-family: Arial, sans-serif;
