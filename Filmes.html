@@ -15,77 +15,34 @@
   <body>
     <br />
 
-    <br />
-    <nav class="navbar navbar-expand-lg navbar-dark cor1 fixed-top">
-      <div class="container-fluid">
-        <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarScroll"
-        >
-          <ul
-            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-            style="--bs-scroll-height: 100px"
-          >
-         
-            <li class="nav-item">
-              <a class="nav-link fontegeral" href="Filmes.html">HOME</a>
-            </li>
-            <li class="nav-item dropdown fontegeral">
-              <a
-                class="nav-link custom-login fontegeral"
-                href="Login.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
-                >FILMES</a
-              >
-              <ul class="dropdown-menu fontedropmenu">
-                <li>
-                  <a class="dropdown-item" href="cadastro_filmes.html"
-                    >CADASTRO</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">LISTAR E EDITAR</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown fontegeral">
-              <a
-                class="nav-link custom-login"
-                href="Login.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
-                >USUÁRIOS</a
-              >
-              <ul class="dropdown-menu">
-                <li>
-                  <a
-                    class="dropdown-item fontedropmenu"
-                    href="listar_usuarios.php"
-                    >LISTAR E EDITAR</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="img/iconsite.jpg">
+
       </div>
-    </div>
+      <div class="nav-list">
+          <ul>
+              <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">FILMES</a></li>
+              <li class="nav-item"><a href="#" class="nav-link"> USUARIOS</a></li>
+          </ul>
+      </div>
+     
+
+      <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+      </div>
   </nav>
+  <div class="mobile-menu">
+      <ul>
+          <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FILMES</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">USUARIOS</a></li>
+      </ul>
+
+     
+  </div>
+
 
     <br />
     <div
@@ -244,13 +201,13 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="filmes.js"></script>
+    <script src="script.js"></script>
   </body>
   <footer class="footer">
     <p>&copy; 2024 Locadora de Filmes</p>
     <p>
-      <a href="#">Sobre</a> | <a href="#">Contato</a> |
-      <a href="#">Política de Privacidade</a>
+      <a href="footer/sobrenos.html">Sobre</a> | <a href="footer/contatoform.html">Contato</a> |
+      <a href="footer/politicaprivacidade.html">Política de Privacidade</a>
     </p>
   </footer>
 </html>

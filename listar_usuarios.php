@@ -74,7 +74,8 @@ $result = $conn->query($sql);
 
   <!-- Tabela de usuários -->
   <div class="container mt-5">
-    <h2>Usuários Cadastrados</h2>
+    <h2>USUARIOS CADASTRADOS</h2>
+    <br>
     <table class="table table-dark table-bordered">
       <thead>
         <tr>
@@ -130,6 +131,18 @@ $result = $conn->query($sql);
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <footer class="footer">
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>&copy; 2024 Locadora de Filmes</p>
+    <p>
+      <a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> |
+      <a href="../footer/politicaprivacidade.html">Política de Privacidade</a>
+    </p>
+
+  </footer>
 </body>
 
 </html>
