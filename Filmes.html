@@ -14,30 +14,42 @@
   </head>
   <body>
     <br />
-
-    <nav class="nav-bar">
-      <div class="logo">
-        <img src="img/iconsite.jpg">
-
-      </div>
-      <div class="nav-list">
-          <ul>
-              <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">FILMES</a></li>
-              <li class="nav-item"><a href="#" class="nav-link"> USUARIOS</a></li>
-          </ul>
-      </div>
-     
-
-      <div class="mobile-menu-icon">
-          <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
-      </div>
-  </nav>
+    <div class="fixed-top"></div>
+    <div class="fixed-top navbar-dark cor1">
+      <nav>
+        <div class="logo">
+          <img src="img/iconsite.jpg">
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">INICIO</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">FILMES</a>
+            <div class="dropdown-content">
+              <a href="#">LISTAR E EDITAR</a>
+              <a href="#">CADASTRAR</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">USUÁRIOS</a>
+            <div class="dropdown-content">
+              <a href="#">Clientes</a>
+              <a href="#">Administradores</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+</div>
   <div class="mobile-menu">
       <ul>
           <li class="nav-item"><a href="#" class="nav-link">INÍCIO</a></li>
           <li class="nav-item"><a href="#" class="nav-link">FILMES</a></li>
           <li class="nav-item"><a href="#" class="nav-link">USUARIOS</a></li>
+          
       </ul>
 
      

@@ -1,118 +1,38 @@
-
-
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-@font-face {
-  font-family: "Bebas";
-  src: url("/font/Retro\ Stereo\ Wide.ttf") format("truetype");
-}
-.fontedropmenu{
-  font-family: 'Lexend+Deca', sans-serif; /* Aplicando a fonte Inter */
-  font-size: 18PX;
-}
-.fontegeral {
-  font-family: 'Lexend+Deca', sans-serif; /* Aplicando a fonte Inter */
-  font-size: 25PX;
-}
-.aprovimgloc{
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    
-}
-.botaoalugar {
-  position: relative;
-  
-  height: 100vh; /* Garante que o container ocupe toda a altura da viewport */
-}
 
-.botaoalugar button {
-  
-  background-color: #fc1722;
-  cursor: pointer;
-  position: absolute;
-  top: 1%;
-  transform: translateY(-50%);
-  margin-bottom: 10px;
-  border: none;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 55px;
-  background-color: #e50914;
-  color: #fff;
-  width: 100%;
-  height: 45px;
-  margin-top: 25px;
-
-
-}
-
-.footer{
-  padding: 20px;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-}
-.cadastro_body button {
-  margin-top: 25px;
-  height: 45px;
-  width: 100%;
-  color: #fff;
-  background-color: #e50914;
-  border-radius: 55px;
-  font-weight: bold;
-  font-size: 16px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-.cadastro_body button:hover {
-  background-color: #fc1722;
-  cursor: pointer;
-}
-.descfilmes{
-  text-align: justify;
-}
+/* Fontes personalizadas */
 @font-face {
   font-family: "Retro Stereo Wide";
-  src: url("../font/Retro\ Stereo\ Wide.ttf") format("truetype");
+  src: url("../font/Retro Stereo Wide.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Bebas-Regular";
-  src: url("../Projeto-Locadora-/font/Bebas-Regular.ttf")
-    format("truetype");
-}
-#titulosite {
-  font-family: "Retro Stereo Wide", sans-serif;
-  font-size: 40px;
+  font-family: "Bebas";
+  src: url("../font/Bebas-Regular.ttf") format("truetype");
 }
 
+/* Estilos globais */
 body {
   background-color: #1a1a1a;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fff;
   margin: 0;
   padding: 0;
 }
+
 h1 {
   color: #fc0303;
   text-align: center;
 }
-h2 {
+
+h2, h3 {
   color: #fff;
   text-align: center;
 }
-h3 {
-  color: #fff;
-  text-align: center;
-}
 
-.cor1 {
-  background-color: #1a1a1a;
-}
-
-
+/* Botões */
 .btn-custom {
   background-color: #fc0303;
   border-color: #fc0303;
@@ -125,14 +45,9 @@ h3 {
   color: #fc0303;
 }
 
-.dropdown-item {
-  color: #000;
-  background-color: #fff;
-}
-
-.dropdown-item:hover {
-  background-color: #fc0303;
-  color: #fff;
+/* Layout */
+.cor1 {
+  background-color: #1a1a1a;
 }
 
 .container-fluid {
@@ -143,14 +58,40 @@ h3 {
   margin-top: 20px;
 }
 
+/* Imagens */
+.aprovimgloc {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
 .carousel-item img {
   border-radius: 10px;
 }
 
-.container h2 {
-  text-align: center;
-  margin-bottom: 20px;
+/* Navbar */
+
+/* Custom Classes */
+.fontedropmenu {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 18px;
 }
+
+.fontegeral {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 25px;
+}
+
+.descfilmes {
+  text-align: justify;
+}
+
+#titulosite {
+  font-family: "Retro Stereo Wide", sans-serif;
+  font-size: 40px;
+}
+
 .img_infos_filmes {
   text-align: center;
 }
@@ -160,19 +101,19 @@ h3 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 800px; /* Ajuste conforme necessário */
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
 }
 
 .img {
-  flex: 0 0 50%; /* Ajuste conforme necessário */
+  flex: 0 0 50%;
 }
 
 .texto {
-  flex: 0 0 50%; /* Ajuste conforme necessário */
-  padding-left: 20px; /* Espaçamento entre a imagem e o texto */
+  flex: 0 0 50%;
+  padding-left: 20px;
 }
 
 .texto h2 {
@@ -183,119 +124,151 @@ h3 {
   margin-bottom: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+.logo img {
+  width: 100px;
+  height: auto;
+}
+.footer{
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #24252a;
-    box-shadow: 0px 3px 10px #464646;
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
+a:hover {
+  opacity: 0.7;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
-.logo h1 {
-    color: #fff;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 25vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
 }
 
 .nav-list {
-    display: flex;
-    align-items: center;
+  list-style: none;
+  display: flex;
 }
 
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-}
-
-.login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7;
-}
-
-.login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.mobile-menu-icon {
-    display: none;
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.4s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 25vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #333333d8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 
 
-.logo img {
-  width: 100px; /* Defina a largura desejada */
-  height: auto; /* Mantenha a proporção da imagem */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
