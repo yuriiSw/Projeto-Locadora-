@@ -8,5 +8,10 @@ Organizar Abas de Filme(   )
 ( )6
 ( )7
 ( )8
+NavBar Principal(✔️)---- falta deixar o drop do menu responsivo
 Fazer Listar Filmes(  )
-Footer Editar Nav Bar( )
+Footer Editar Nav Bar( )    --Sobre ( )  --Contato (✔️) --Política de Privacidade ( ✔️)
+Editar NavBar area USUARIOS ( )
+Editar NavBar area FILMES( )
+Arrumar imagem do selo(fundo) #07071c
+fonte geral:  font-family: 'Lexend Deca', sans-serif;

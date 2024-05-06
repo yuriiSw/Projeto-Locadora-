@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         .container {
+          background-color: #07071c;
           width: 100%;
           height: 100vh;
           display: flex;

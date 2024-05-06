@@ -2,49 +2,124 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Menu Responsivo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locadora de Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="imagex/jpg" href="../img/iconsite.jpg">
+  <link rel="stylesheet" href="../css/Filmes.css" />
+  <script defer src="../js/script.js"></script>
+  <style>
+
+  </style>
+  }
+
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>Logo</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Sobre</a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+  <br />
+  <!-- NAV BAR PRINCIPAL -->
+  <div class="fixed-top"></div>
+  <div class="fixed-top navbar-dark cor1">
+    <nav>
+      <a href="../Filmes.html">
+        <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
+      </a>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="../assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-            </ul>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../Filmes.html">INICIO</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">FILMES</a>
+          <div class="dropdown-content">
+            <a href="../listar_filmes.php">LISTAR E EDITAR</a>
+            <a href="../cadastro_filmes.html">CADASTRAR</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">USUÁRIOS</a>
+          <div class="dropdown-content">
+            <a href="../listar_usuarios.php">LISTAR E EDITAR</a>
+          </div>
+        </li>
+      </ul>
 
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
+      <button class="botaoexit" onclick="window.location.href='../Projeto-Locadora-'">Sair</button>
+
+    </nav>
+  </div>
+
+
+  <!-- NAV BAR MOBILE -->
+
+  <div class="mobile-menu">
+    <ul class="menu-list">
+      <li class="nav-item"><a href="../Filmes.html" class="nav-link">INÍCIO</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">FILMES</a>
+        <ul class="dropdown-menu">
+          <li><a href="../listar_filmes.php">LISTAR E EDITAR</a></li>
+          <li><a href="../cadastro_filmes.html">CADASTRAR</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">USUÁRIOS</a>
+        <ul class="dropdown-menu">
+          <li><a href="../listar_usuarios.php">LISTAR E EDITAR</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à Nossa Locadora de Filmes! Desde 2005, estamos comprometidos em proporcionar a melhor experiência cinematográfica para nossos clientes. Com uma ampla seleção de filmes, desde clássicos até os lançamentos mais recentes, temos algo para todos os gostos.</p>
+        <p>Nossa equipe apaixonada está sempre pronta para ajudá-lo a encontrar o filme perfeito para a sua noite de cinema. Além disso, oferecemos serviços de aluguel online para maior comodidade.</p>
+    </section>
+
+    <section id="localizacao">
+        <h2>Localização</h2>
+        <p>Estamos localizados em:</p>
+        <p>Rua das Videolocadoras, 123</p>
+        <p>Bairro do Cinema</p>
+        <p>Cidade do Filme</p>
+        <p>CEP: 12345-678</p>
+
+        <!-- Contêiner do Mapa -->
+        <div id="map-container">
+            <!-- Mapa do Google -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.362930451525!2d-46.63989858502382!3d-23.567997784664567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce580e38ad1f55%3A0x2c8c6d27936e1079!2sAv.%20da%20Liberdade%2C%20899%20-%20Liberdade%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001503-001%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1641387450793!5m2!1spt-BR!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-    </header>
+    </section>
 
-    <script src="../assets/js/script.js"></script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
-<!-- FEITO POR: LARISSA V. KICH  -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2024 Locadora de Filmes</p>
+  <p>
+    <a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> |
+    <a href="../footer/politicaprivacidade.html">Política de Privacidade</a>
+  </p>
+</footer>
 
 </html>

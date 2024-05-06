@@ -1,191 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Locadora de filmes</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"/>
-      <link rel="shortcut icon" type="imagex/jpg" href="./img/iconsite.jpg">
-    <link rel="stylesheet" href="../css/Filmes.css" />
-    <link rel="shortcut icon" type="imagex/jpg" href="../img/iconsite.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locadora de Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="imagex/jpg" href="../img/iconsite.jpg">
+  <link rel="stylesheet" href="../css/Filmes.css" />
+  <script defer src="../js/script.js"></script>
+  <!-- CSS PROPRIO DO FURMULARIO -->
+  <style>
+    body {
+      margin-top: 110px;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      background: #07071c;
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+    }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+    form {
+      width: 100%;
+      max-width: 30rem;
+    }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    label,
+    input,
+    textarea,
+    button {
+      display: block;
+    }
 
-        textarea {
-            height: 150px;
-        }
+    input,
+    textarea,
+    button {
+      width: 100%;
+      font: inherit;
+      padding: 1.25rem;
+      font-weight: 700;
+      font-family: 'Lexend Deca', sans-serif;
+    }
 
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            float: right;
-        }
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      color: white;
+      background: #333333;
+      border: 0.125rem solid transparent;
+      border-radius: 1.125rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    input:hover,
+    input:focus,
+    textarea:hover,
+    textarea:focus {
+      outline: none;
+      border-color: lightblue;
+      box-shadow: 0 0 0 0.3125rem #26344a;
+    }
 
-        .success-message {
-            display: none;
-            background-color: #d4edda;
-            color: #155724;
-            padding: 10px;
-            margin-top: 10px;
-            border-radius: 4px;
-        }
-    </style>
+    label {
+      margin-bottom: 0.5rem;
+      color: #84868f;
+    }
+
+    textarea {
+      min-height: 12.5rem;
+      resize: vertical;
+    }
+
+    button {
+      border: none;
+      border-radius: 99px;
+      color: white;
+      background: #f51d1d78;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover,
+    button:focus {
+      outline: none;
+      background: red;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      background: #fc0000;
+    }
+
+    .success,
+    .error {
+      text-align: center;
+    }
+
+    .success {
+      color: greenyellow;
+    }
+
+    .error {
+      color: tomato;
+    }
+  </style>
 </head>
+
 <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <nav class="navbar navbar-expand-lg navbar-dark cor1 fixed-top">
-        <div class="container-fluid">
-          <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarScroll"
-          >
-            <ul
-              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-              style="--bs-scroll-height: 100px"
-            >
-           
-              <li class="nav-item">
-                <a class="nav-link fontegeral" href="../Filmes.html">HOME</a>
-              </li>
-              <li class="nav-item dropdown fontegeral">
-                <a
-                  class="nav-link custom-login fontegeral"
-                  href="Login.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="true"
-                  >FILMES</a
-                >
-                <ul class="dropdown-menu fontedropmenu">
-                  <li>
-                    <a class="dropdown-item" href="../cadastro_filmes.html"
-                      >CADASTRO</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">LISTAR E EDITAR</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown fontegeral">
-                <a
-                  class="nav-link custom-login"
-                  href="Login.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="true"
-                  >USUÁRIOS</a
-                >
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item fontedropmenu"
-                      href="../listar_usuarios.php"
-                      >LISTAR E EDITAR</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <br />
+  <!-- NAV BAR PRINCIPAL -->
+  <div class="fixed-top"></div>
+  <div class="fixed-top navbar-dark cor1">
+    <nav>
+      <a href="../Filmes.html">
+        <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
+      </a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
+      <ul class="nav-list">
+        <li><a href="../Filmes.html">INICIO</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">FILMES</a>
+          <div class="dropdown-content">
+            <a href="../listar_filmes.php">LISTAR E EDITAR</a>
+            <a href="../cadastro_filmes.html">CADASTRAR</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">USUÁRIOS</a>
+          <div class="dropdown-content">
+            <a href="../listar_usuarios.php">LISTAR E EDITAR</a>
+          </div>
+        </li>
+      </ul>
+      <button id="botaoexit" onclick="window.location.href='../index.html'">Sair</button>
     </nav>
-    <div class="container">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form" action="#" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" placeholder="Insira seu nome" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Insira seu email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" placeholder="Insira sua mensagem" required></textarea>
-            
-            <input type="submit" value="Enviar">
-            
-        </form>
-        <br>
-        <br>
-        <div class="success-message" id="success-message">
-            Sua mensagem foi enviada com sucesso!
-        </div>
-    </div>
+  </div>
 
-    <script>
-        // Quando o formulário for enviado, exibir a mensagem de sucesso
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita o envio padrão do formulário
-            document.getElementById("success-message").style.display = "block"; // Exibe a mensagem de sucesso
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  <!-- NAV BAR MOBILE -->
+
+  <div class="mobile-menu">
+    <ul class="menu-list">
+      <li class="nav-item"><a href="../Filmes.html" class="nav-link">INÍCIO</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">FILMES</a>
+        <ul class="dropdown-menu">
+          <li><a href="../listar_filmes.php">LISTAR E EDITAR</a></li>
+          <li><a href="../cadastro_filmes.html">CADASTRAR</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link">USUÁRIOS</a>
+        <ul class="dropdown-menu">
+          <li><a href="../listar_usuarios.php">LISTAR E EDITAR</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- FORMULARIO DE CONTATO-->
+  <form action="" method="POST" data-form>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" placeholder="Insira seu nome" id="nome" required />
+    <label for="email">E-mail</label>
+    <input type="email" name="email" placeholder="Insira seu e-mail" id="email" required />
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" placeholder="Insira sua mensagem" id="mensagem" required></textarea>
+    <button type="submit" data-button>Enviar</button>
+  </form>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
-<br>
-<br>
-<br>
-<br>
+
+<!-- FOOTER -->
 <footer class="footer">
-    <p>&copy; 2024 Locadora de Filmes</p>
-    <p>
-      <a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> |
-      <a href="../footer/politicaprivacidade.html">Política de Privacidade</a>
-    </p>
-  </footer>
+  <p>&copy; 2024 Locadora de Filmes</p>
+  <p>
+    <a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> |
+    <a href="../footer/politicaprivacidade.html">Política de Privacidade</a>
+  </p>
+</footer>
+
 </html>

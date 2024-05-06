@@ -1,3 +1,4 @@
+
 /* Tipografia */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
@@ -15,7 +16,7 @@
 
 /* Estilos globais */
 body {
-  background-color: #1a1a1a;
+  background-color: #07071c;
   font-family: 'Inter', sans-serif;
   color: #fff;
   margin: 0;
@@ -47,7 +48,7 @@ h2, h3 {
 
 /* Layout */
 .cor1 {
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 
 .container-fluid {
@@ -85,6 +86,10 @@ h2, h3 {
 
 .descfilmes {
   text-align: justify;
+  font-size: 20px;
+}
+.textofilme{
+  font-size: 20px;
 }
 
 #titulosite {
@@ -127,7 +132,9 @@ h2, h3 {
 .logo img {
   width: 100px;
   height: auto;
+  float: right;
 }
+
 .footer{
   padding: 20px;
   text-align: center;
@@ -149,18 +156,15 @@ a:hover {
   opacity: 0.7;
 }
 
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
+
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  height: 25vh;
+  height: 15vh;
+  background-color: #000000;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 main {
@@ -198,7 +202,7 @@ main {
   }
   .nav-list {
     position: absolute;
-    top: 25vh;
+    top: 18vh;
     right: 0;
     width: 50vw;
     height: 92vh;
@@ -254,9 +258,9 @@ main {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffffb8;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(38, 22, 89, 0.595);
   z-index: 1;
 }
 
@@ -267,8 +271,130 @@ main {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #7474a5;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.botaoalugar {
+  text-align: center;
+  margin-top: -30px;
+  height: 45px;
+  width: 100%;
+  background-color: #e50914;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 10px;
+  color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.botaoalugar button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background: transparent; /* Adiciona um background transparente ao botão */
+  color: inherit; /* Herda a cor do texto da classe .botaoalugar */
+  font-size: inherit; /* Herda o tamanho da fonte da classe .botaoalugar */
+  font-weight: inherit; /* Herda o peso da fonte da classe .botaoalugar */
+  border-radius: inherit; /* Herda o raio da borda da classe .botaoalugar */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+}
+
+.botaoalugar button:hover {
+  background-color: #c40707; /* Cor de fundo ao passar o mouse */
+}
+.mobile-menu {
+    position: relative;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-item {
+        display: block;
+    }
+    .dropdown-menu {
+        position: static;
+        display: none;
+    }
+}
+/* botao exit*/
+.botaoexit {
+  background-color: transparent;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; /* Defina a largura desejada aqui */
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.botaoexit:hover {
+  background-color: #ff0000;
+  color: white;
+}
+#botaoexit {
+  background-color: transparent;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px; 
+  font-weight: normal; 
+}
+
+#botaoexit:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+/* Mapa Sobre */
+#map-container {
+  width: 100%;
+  height: 450px; /* altura do mapa */
+}
+
+#localizacao{
+
+}
