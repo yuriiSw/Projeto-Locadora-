@@ -423,3 +423,27 @@ main {
   text-align: center;
 
 }
+
+#barbiah1{
+  color:#e67ebd ;
+}
+
+.barbietext{
+  color: ffccff;
+}
+#lista_filmes .col-md-3 {
+  padding: 10px;
+}
+
+#lista_filmes img {
+  width: 110%; /* Ajusta a largura das imagens */
+  max-height: 399px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#lista_filmes img:hover {
+  transform: scale(1.05);
+}

@@ -2,102 +2,142 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Locadora de filmes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locadora de Filmes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/Filmes.css">
-  <script src="filmes.js"></script>
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="imagex/jpg" href="../img/iconsite.jpg">
+  <link rel="stylesheet" href="../css/Filmes.css" />
 </head>
 
 <body>
-  <div class="nome text-center">
-    <h1>Locadora de filmes</h1>
+  <br />
+  <div class="fixed-top"></div>
+  <div class="fixed-top navbar-dark cor1">
+    <nav>
+      <a href="../Filmes.html">
+        <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
+      </a>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../Filmes.html">INICIO</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">FILMES</a>
+          <div class="dropdown-content">
+            <a href="../listar_usuarios.php">LISTAR E EDITAR</a>
+            <a href="../cadastro_filmes.html">CADASTRAR</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">USUÁRIOS</a>
+          <div class="dropdown-content">
+            <a href="../listar_usuarios.php">LISTAR E EDITAR</a>
+          </div>
+        </li>
+      </ul>
+
+      <button class="botaoexit" onclick="window.location.href='../index.html'">Sair</button>
+
+    </nav>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-dark cor1">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link" href="../Filmes.html">HOME</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="true">FILMES</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="cadastro_filmes.html">Cadastrar Filme</a></li>
-              <li><a class="dropdown-item" href="#">Listar / Editar Filmes</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="true">USUARIOS</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="listar_usuarios.php">Listar / Editar Usuarios</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-          <button class="btn btn-custom" type="submit">Procurar</button>
-        </form>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <div class="container fontegeral">
+    <div class="row">
+      <div class="col-md-6">
+        <h1><strong id="barbiah1">BARBIE</strong></h1>
+        <br>
+        <div class="textofilme">
+          <h2>Descrição do Filme: 📽️</h2>
+          <div class="descfilmes" <p>No fabuloso live-action da boneca mais famosa do mundo, Barbie, somos transportados para Barbieland, um mundo mágico onde todas as versões da boneca vivem em harmonia, desfrutando de luxuosas festas e buscando o melhor em moda. Porém, uma Barbie interpretada por Margot Robbie começa a questionar a perfeição desse mundo cor-de-rosa, levando-a a sair de Barbieland e encarar o mundo real. Ao lado de seu parceiro Ken, interpretado por Ryan Gosling, ela enfrenta desafios e descobre que a verdadeira beleza reside no interior de cada um.</p>
+          </div>
+          <br>
+          <h2>Detalhes Técnicos: 🎥</h2>
+          <ul>
+            <li><strong>Classificação Indicativa:</strong> 12+ anos</li>
+            <li><strong>Gênero:</strong> Comédia, Aventura, Família</li>
+            <li><strong>Idioma:</strong> Inglês e Português</li>
+            <li><strong>Data de Lançamento (Cinemas):</strong> 20 de Julho de 2023</li>
+            <li><strong>Duração:</strong> 1 hora e 55 minutos</li>
+            <li><strong>Produtora:</strong> Mattel, LuckyChap Entertainment, Mattel Films, Heyday Films, NB/GG Pictures</li>
+            <li><strong>Avaliação:</strong> 4.1 ⭐️⭐️⭐️⭐️</li>
+            <li><strong>Selo de Aprovação Locadora:</strong> </li>
+
+            <div class="aprovimgloc">
+              <img src="../img/seloabsolutecinema.png" width="320" height="205" />
+            </div>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="container avengers">
+          <img src="../img/barbie.png.jpg" alt="Descrição da imagem" class="img-fluid">
+        </div>
+        <br>
+        <div class="botaoalugar">
+          <button type="submit" class="submit">ALUGAR</button>
+        </div>
+
       </div>
     </div>
-  </nav>
-  <BR>
-    <BR>
-      <BR>
-        <BR>
-      <h1>BARBIE</h1><!-- FAZER CSS DESSE H1 COLOCAR DIV PARA EDITAR DOS OS H1 DOS FILMES-->
-      <BR>
-        <BR>
-          <BR>
-            <BR>
-      <div class="img_infos_filmes"><!-- FAZER CSS DAS IMAGENS DOS FILMES -->
-          <img src="../img/barbie.png.jpg" width="700" height="500"/>
   </div>
-  <BR>
-    <BR>
-      <BR>
-        <BR>
-  <!-- FORMATAR DESCRIÇÃO -->
-  
-<h2>No fabuloso live-action da boneca mais famosa do mundo, acompanhamos o dia a dia em Barbieland - o mundo mágico das Barbies, onde todas as versões da boneca vivem em completa harmonia e suas únicas preocupações são encontrar as <br>
-   melhores roupas para passear com as amigas e curtir intermináveis festas. Porém, uma das bonecas (interpretada por <br>
-   Margot Robbie) começa a perceber que talvez sua vida não seja tão perfeita assim, questionando-se sobre o sentido de <br>
-    sua existência e alarmando suas companheiras. Logo, sua vida no mundo cor-de-rosa começa a mudar e, eventualmente, <br>
-    ela sai de Barbieland. Forçada a viver no mundo real, Barbie precisa lutar com as dificuldades de não ser mais apenas uma boneca - pelo menos ela está acompanhada de seu fiel e amado Ken (Ryan Gosling), que parece cada vez mais fascinado <br>
-       pela vida no novo mundo. Enquanto isso, Barbie tem dificuldades para se ajustar, e precisa enfrentar vários momentos nada coloridos até descobrir que a verdadeira beleza está no interior de cada um.</h2>      
-<BR>
-        <BR>
-          <BR>
-            <BR>
-      <h3>Classificação Indicativa: 14
-          <br>
-          Gênero: Comédia
-          <br>
-          Idioma: Inglês
-          <br>
-          Data de Lançamento (Cinemas): 21 Julho, 2023
-          <br>
-          Duração: 1h 54m
-          <br>
-          Produtora: Mattel, Heyday Films, NB/GG Pictures, LuckyChap Entertainment</h3>
-   
-  
+  </div>
+  </div>
+  <style>
+    .no-space {
+      white-space: nowrap;
+    }
+  </style>
   <style>
     .img-hover:hover {
       opacity: 0.7;
     }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <script> src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin = "anonymous" ></script>
+  <script src="../js/script.js"></script>
 </body>
+<footer>
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>&copy; 2024 Locadora de Filmes</p>
+      <p><a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> | <a
+          href="../footer/politicaprivacidade.html">Política de Privacidade</a></p>
+    </div>
+    <div class="icons-container">
+      <!-- Conteúdo dos ícones aqui -->
+      <div class="icon">
+        <a href="https://www.whatsapp.com" target="_blank">
+          <img src="../img/whatsappicon.png" alt="Ícone 1">
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../img/instagramicon.png" alt="Ícone 2">
+        </a>
+      </div>
+      <div class="icon">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../img/facebookicon.png" alt="Ícone 2">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</script>
 
 </html>
