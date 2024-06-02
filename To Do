@@ -1,18 +1,23 @@
 A Fazer:✔️
-Organizar Abas de Filme(   )
-(✔️ )1 
-(✔️ )2
+Organizar Abas de Filme(✔️)
+(✔️)1 
+(✔️)2
 (✔️)3 
 (✔️)4
-( )5
-( )6
-( )7
-( )8
+(✔️)5
+(✔️)6
+(✔️)7
+(✔️)8
 Footer (✔️ )
 NavBar Principal(✔️)---- falta deixar o drop do menu responsivo
 Fazer Listar Filmes(  )
 Footer Editar Nav Bar( ✔️)    --Sobre (✔️)  --Contato (✔️) --Política de Privacidade (✔️)
 Editar NavBar area USUARIOS ( )
 Editar NavBar area FILMES( )
-Arrumar imagem do selo(fundo) #07071c
+Arrumar imagem do selo(✔️) 
+Arrumar login(✔️) 
+Trocar o exit dos html( )
+Colocar NavBar nos links da NavBar( )
+
 fonte geral:  font-family: 'Lexend Deca', sans-serif;
+fundO:#07071c

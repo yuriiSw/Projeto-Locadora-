@@ -17,61 +17,59 @@ $sql = "SELECT id_usu, nome_usu, email_usu, data_nasc FROM usuarios";
 $result = $conn->query($sql);
 
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Locadora de filmes</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/Filmes.css">
-  <style>
-    /* Estilos personalizados */
-    .table-dark tbody tr:hover {
-      background-color: rgba(0, 0, 0, 0.15);
-      /* Adiciona efeito de escurecimento ao passar o mouse */
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locadora de Filmes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="imagex/jpg" href="img/iconsite.jpg">
+  <link rel="stylesheet" href="css/Filmes.css" />
 </head>
 
 <body>
-  <div class="nome text-center">
-    <h1>Locadora de filmes</h1>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark cor1">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link" href="Filmes.html">HOME</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">FILMES</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Cadastrar Filme</a></li>
-              <li><a class="dropdown-item" href="#">Listar / Editar Filmes</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link custom-login" href="Login.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">USUARIOS</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Listar / Editar Usuarios</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-          <button class="btn btn-custom" type="submit">Procurar</button>
-        </form>
+  <br />
+  <div class="fixed-top"></div>
+  <div class="fixed-top navbar-dark cor1">
+    <nav>
+      <a href="../Projeto-Locadora-/Filmes.html">
+        <h1 id="titulosite" class="mr-auto">LOCADORA DE FILMES</h1>
+    </a>
+    
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-    </div>
-  </nav>
+      <ul class="nav-list">
+        <li><a href="../Projeto-Locadora-/Filmes.html">INICIO</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">FILMES</a>
+          <div class="dropdown-content">
+            <a href="listar_filmes.php">LISTAR E EDITAR</a>
+            <a href="cadastro_filmes.html">CADASTRAR</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">USUÁRIOS</a>
+          <div class="dropdown-content">
+            <a href="listar_usuarios.php">LISTAR E EDITAR</a>
+          </div>
+        </li>
+      </ul>
+      
+      <button class="botaoexit" onclick="window.location.href='../Projeto-Locadora-/index.php'">Sair</button>
 
+    </nav>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <!-- Tabela de usuários -->
   <div class="container mt-5">
     <h2>USUARIOS CADASTRADOS</h2>
@@ -82,7 +80,6 @@ $result = $conn->query($sql);
           <th scope="col">ID</th>
           <th scope="col">Nome</th>
           <th scope="col">E-mail</th>
-          <th scope="col">Data de Nascimento</th>
           <th scope="col">Ação</th> <!-- Adicionando uma coluna para ação (exclusão) -->
         </tr>
       </thead>
@@ -95,7 +92,6 @@ $result = $conn->query($sql);
             echo "<td>" . $row["id_usu"] . "</td>";
             echo "<td>" . $row["nome_usu"] . "</td>";
             echo "<td>" . $row["email_usu"] . "</td>";
-            echo "<td>" . $row["data_nasc"] . "</td>";
             echo "<td>
             <button class='btn btn-danger btn-sm' onclick='deletarUsuario(" . $row["id_usu"] . ")'>Excluir</button>
             <a href='controler/editar_usuarios.php?id=" . $row["id_usu"] . "' class='btn btn-primary btn-sm'>Editar</a>
@@ -130,22 +126,39 @@ $result = $conn->query($sql);
     }
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <footer class="footer">
-    <br>
-    <br>
-    <br>
-    <br>
-    <p>&copy; 2024 Locadora de Filmes</p>
-    <p>
-      <a href="../footer/sobrenos.html">Sobre</a> | <a href="../footer/contatoform.html">Contato</a> |
-      <a href="../footer/politicaprivacidade.html">Política de Privacidade</a>
-    </p>
 
-  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
+<footer>
+  <div class="footer-content">
+      <div class="footer-text">
+          <p>&copy; 2024 Locadora de Filmes</p>
+          <p><a href="footer/sobrenos.html">Sobre</a> | <a href="footer/contatoform.html">Contato</a> | <a href="footer/politicaprivacidade.html">Política de Privacidade</a></p>
+      </div>
+      <div class="icons-container">
+          <!-- Conteúdo dos ícones aqui -->
+          <div class="icon">
+            <a href="https://www.whatsapp.com"target="_blank">
+              <img src="img/whatsappicon.png" alt="Ícone 1">
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com" target="_blank">
+              <img src="img/instagramicon.png" alt="Ícone 2">
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="img/facebookicon.png" alt="Ícone 2">
+            </a>
+        </div>
+      </div>
+  </div>
+</footer>
 
-</html>
 
 
 </html>
