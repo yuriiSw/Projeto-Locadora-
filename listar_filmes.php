@@ -108,7 +108,7 @@ if (!$result) {
           echo "<td><img src='" . (isset($row["caminho_imagem"]) ? $row["caminho_imagem"] : "") . "' alt='Imagem do Filme' width='50'></td>";
           echo "<td>
           <button class='btn btn-danger btn-sm' onclick='deletarFilme(" . (isset($row["id_filme"]) ? $row["id_filme"] : "") . ")'>Excluir</button>
-          <a href='controler/editar_filmes.php?id=" . (isset($row["id_filme"]) ? $row["id_filme"] : "") . "' class='btn btn-primary btn-sm'>Editar</a>
+          <a href='controler/editar_filme.php?id=" . (isset($row["id_filme"]) ? $row["id_filme"] : "") . "' class='btn btn-primary btn-sm'>Editar</a>
         </td>";
           echo "</tr>";
         }

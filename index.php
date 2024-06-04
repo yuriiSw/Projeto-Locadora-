@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../Projeto-Locadora-/css/style.css">
-    <title>Login</title>
-</head>
-
-<body>
-
-    <?php
+<?php
     // Conexão com o banco de dados
     $servername = "localhost";
     $username = "root";
@@ -41,45 +28,63 @@
             // Consulta para encontrar o usuário
             $sql = "SELECT * FROM usuarios WHERE email_usu = '$email'";
             $result = $conn->query($sql);
-
             if ($result->num_rows > 0) {
                 // Usuário encontrado, verificar a senha
                 $row = $result->fetch_assoc();
                 if (password_verify($senha, $row['senha_usu'])) {
                     // Senha correta, redireciona para filmes.html
-                    header("Location: filmes.html");
+                    echo "<script>window.location.href = 'filmes.html';</script>";
                     exit();
                 } else {
-                    echo "Senha incorreta!";
+                    echo "<script>alert('Senha incorreta!');</script>";
                 }
             } else {
-                echo "Usuário não encontrado!";
+                echo "<script>alert('Usuário não encontrado!');</script>";
             }
+            
         } elseif (isset($_POST['cadastrar'])) {
             $nome = $_POST['nome'];
             $email = $_POST['email'];
             $senha = encryptPassword($_POST['senha']); // Criptografa a senha
 
-            // Verifica se o usuário já existe no banco de dados
-            $check_user_sql = "SELECT * FROM usuarios WHERE email_usu = '$email'";
-            $check_user_result = $conn->query($check_user_sql);
+   // Verifica se o usuário já existe no banco de dados
+$check_user_sql = "SELECT * FROM usuarios WHERE email_usu = '$email'";
+$check_user_result = $conn->query($check_user_sql);
 
-            if ($check_user_result->num_rows > 0) {
-                echo "Este e-mail já está cadastrado!";
-            } else {
-                // Insere o novo usuário no banco de dados
-                $insert_user_sql = "INSERT INTO usuarios (nome_usu, email_usu, senha_usu) VALUES ('$nome', '$email', '$senha')";
+if ($check_user_result->num_rows > 0) {
+    echo "<script>alert('Este e-mail já está cadastrado!');</script>";
+} else {
+    // Insere o novo usuário no banco de dados
+    $insert_user_sql = "INSERT INTO usuarios (nome_usu, email_usu, senha_usu) VALUES ('$nome', '$email', '$senha')";
 
-                if ($conn->query($insert_user_sql) === TRUE) {
-                    echo "Usuário cadastrado com sucesso!";
-                } else {
-                    echo "Erro ao cadastrar o usuário: " . $conn->error;
-                }
-            }
+    if ($conn->query($insert_user_sql) === TRUE) {
+        echo "<script>alert('Usuário cadastrado com sucesso!');</script>";
+    } else {
+        echo "<script>alert('Erro ao cadastrar o usuário: " . $conn->error . "');</script>";
+    }
+}
+
         }
     }
     ?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../Projeto-Locadora-/css/style.css">
+    <link rel="shortcut icon" type="imagex/jpg" href="img/iconsite.jpg">
+    <title>Login</title>
+</head>
+
+<body>
+
+    
+<br>
+<br>
+<br>
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form method="post" action="">

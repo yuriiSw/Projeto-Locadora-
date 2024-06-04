@@ -234,3 +234,26 @@ function checkEmail(email) {
     email
   );
 }
+function alugarFilme(id_filme) {
+  fetch('../controler/alugar_filme.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          id_filme: id_filme
+      })
+  })
+  .then(response => response.json())
+  .then(data => {
+      if (data.success) {
+          alert("Filme alugado com sucesso!");
+      } else {
+          alert("Erro ao alugar o filme: " + data.message);
+      }
+  })
+  .catch(error => {
+      console.error('Erro:', error);
+      alert('Erro ao alugar o filme');
+  });
+}
